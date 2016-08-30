@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8sp"
+    android:paddingLeft="8sp"
+    android:paddingRight="8sp"
+    android:paddingTop="8sp"
+    tools:context="com.example.android.matrixapp.experiment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trial"
+        android:layout_marginBottom="8sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:layout_marginBottom="8sp"
+        android:text="Compare the target sentence with the matrix and select the best match:"
+        />
+    <Button
+        android:id="@+id/playAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Play Target (Implant Ear)"
+        android:onClick="playAudio"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24sp"
+        android:text="Pitch Shift"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="90sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20sp"
+
+            >
+
+            <RadioButton
+                android:id="@+id/twentyone"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:textSize="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/sixteen"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop = "16sp"
+                android:textSize="16sp"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:text=""
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/eleven"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:textSize="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/six"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/one"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="90sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/twentytwo"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/seventeen"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/twelve"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/seven"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:background="@drawable/radio_background"
+                android:textSize="16sp"
+
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/two"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="90sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/twentythree"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/eighteen"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/thirteen"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/eight"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:background="@drawable/radio_background"
+                android:textSize="16sp"
+
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/three"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="90sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/twentyfour"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/nineteen"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/fourteen"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/nine"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:background="@drawable/radio_background"
+                android:textSize="16sp"
+
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/four"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup5"
+            android:layout_width="90sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/twentyfive"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/twenty"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/fifteen"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/ten"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:background="@drawable/radio_background"
+                android:textSize="16sp"
+
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/five"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="16sp"
+                android:text=""
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16sp"
+        android:text="Format Shift"
+        />
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="132sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="16sp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:text="Submit"
+        android:onClick="submit"
+        />
+</LinearLayout>

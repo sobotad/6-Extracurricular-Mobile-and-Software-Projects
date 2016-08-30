@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.matrixapp.ConsentFormActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:layout_weight=".1"
+        android:text="Consent Form:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:maxLines="20"
+        android:id="@+id/body"
+        android:gravity="top|center"
+        android:layout_weight=".8"
+        android:textSize="24sp"
+        android:text="INFORMED CONSENT\n
+Studies of Speech Understanding and Localization (2016-2017)\n\n
+
+INTRODUCTON\n
+The purposes of this form are to provide you (as a prospective research study participant) information that may affect your decision as to whether or not to participate in this research and to record the consent of those who agree to be involved in the study.
+\n\n
+RESEARCHERS\n
+Professor Michael Dorman of the College of Liberal Arts and Sciences at Arizona State University has invited your participation in a research study.
+\n\n
+STUDY PURPOSE\n
+Patients:The purpose of the research is to assess your understanding of speech and ability to localize to sound via your cochlear implant
+\n\n
+Normal Hearing Adults: The purpose of the research is to assess your understanding of speech and ability to localize to sound via a simulation of a cochlear implant.
+\n\n
+DESCRIPTION OF RESEARCH STUDY\n
+If you decide to participate, then as a study participant you will listen to consonants, vowels, words and sentences presented in quiet and/or in noise and will be asked to identify what you hear. All sounds will be at levels ranging from very soft to that of conversational speech. Sounds will be presented auditory only or auditory and visually.
+\n
+If you say YES, then your participation will last for 1-6 hours per day for 1 to 2 days in Coor Hall, Room 3446, at Arizona State University. You may additionally be asked to wear changes to your programs for up to 6 months. Approximately 200 subjects will be participating in this study.
+\n\n
+RISKS\n
+If you decide to participate in this study, then you may face the risk of being tired at the end of the day. To reduce this possibility we will provide you with rest breaks at any time you wish during the testing.
+Patients: You may be tested using signal processing algorithms that have not been FDA approved. You may be offered the opportunity to wear these signal processing algorithms for up to 6 months. There is no risk in the use of these algorithms.
+\n
+Attention unilateral, bilateral, and SSD Med-El patients: you may be tested acutely using Med-El’s Automated Sound Management (ASM) 2.0. ASM 2.0 uses two microphones instead of 1 to scan the environment and make changes to sound processing. It is not yet approved by the FDA in the United States but is currently approved for use in Canada and parts of Europe. Use of the ASM 2.0 poses no risks to you.
+\n\n
+BENEFITS\n
+Although there may be no direct benefits to you, the possible benefits of your participation in the research are that we will learn how to build better cochlear implants and that we will learn the difficulty of listening via a cochlear implant.
+\n\n
+NEW INFORMATION\n
+If the researchers find new information during the study that would reasonably change your decision about participating, then they will provide this information to you.
+\n\n
+CONFIDENTIALITY\n
+All information obtained in this study is strictly confidential unless disclosure is required by law.
+\n
+The results of this research study may be used in reports, presentations, and publications, but the  researchers  will  not  identify  you. In order to maintain confidentiality of  your records, Professor Dorman will assign a code to your name and only that code will appear in our data
+base. The master code list will be stored in a locked cabinet in Professor Dorman’s office. The master code will be available to graduate students and other researchers working in Professor Dorman’s laboratory.
+\n\n
+WITHDRAWAL PRIVILEGE\n
+It is ok for you to say ‘no’. Even if you say ‘yes’ now, you are free to say ‘no’ later, and withdraw from the study at any time.
+\n\n
+COSTS AND PAYMENTS\n
+The researchers want your decision about participating in the study to be absolutely voluntary. Yet they recognize that your time is valuable. You will be reimbursed for all travel, housing and transportation costs that you incurred while participating in this project. In addition you will be paid $15/hour for participation for patients and $10/hour for normal hearing listeners. The payment will be in the form of a check issued with 60 days of your participation in this research. If you decide to withdraw from the study we will still pay your costs of traveling to this laboratory.
+\n
+Attention Med-El patients: If you are participating in a Med-El sponsored project, you will receive a payment in the form of pre-paid Visa or MasterCard instead of a check. You will be informed before you participate if this applies to you.
+\n\n
+COMPENSATION FOR ILLNESS AND INJURY\n
+If you agree to participate in the study, then your consent does not waive any of your legal rights. However, in the event of (harm, injury, illness) arising from this study neither Arizona State University nor the researchers are able to give you any money, insurance coverage, free medical care, or any compensation for such injury.
+\n\n
+VOLUNTARY CONSENT\n
+Any questions you have concerning the research study or your participation in the study, before or after your consent, will be answered by Professor Michael Dorman in the Department of Speech and Hearing Science at Arizona State University, 480-965-3345. If you have questions about your rights as a subject/participant in this research, or if you feel you have been placed at risk, you can contact the Chair of the Human Subjects Institutional Review Board, through the ASU Research Compliance Office, at 480-965 6788.
+" />
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight=".1"
+        android:gravity="right">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Next Page"
+            android:textSize="28sp"
+            android:background="#ff9966"
+            android:onClick="goInstruction"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+
+</LinearLayout>

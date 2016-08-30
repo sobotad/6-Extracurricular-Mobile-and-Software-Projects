@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.matrixapp.adjustNoiseL">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:gravity="center|top"
+        android:textSize="20sp"
+        android:layout_weight=".2"
+        android:textColor="@android:color/black"
+        android:id="@+id/TrialNumber"
+        android:text="Use the buttons below to adjust the background noise to a comfortable listening level, then select 'next': LEFT EAR (you won't hear anything in the right ear)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical"
+        android:layout_weight=".7"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/nLoud"
+            android:layout_width="125sp"
+            android:layout_height="75sp"
+            android:layout_marginBottom="50sp"
+            android:text="Make Louder"
+            android:onClick="louder"
+            />
+
+        <Button
+            android:id="@+id/nQuiet"
+            android:layout_width="125sp"
+            android:layout_height="75sp"
+
+            android:text="Make Quieter"
+            android:onClick="quieter"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight=".1"
+        android:gravity="right">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Next Page"
+            android:textSize="28sp"
+            android:background="#ff9966"
+            android:onClick="goExperiment"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+
+</LinearLayout>
