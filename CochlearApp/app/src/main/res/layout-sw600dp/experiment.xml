@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.cochlearapp.experiment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trial"
+        android:layout_marginBottom="8sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:gravity="top|center"
+        android:textSize="32dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/TrialNumber"
+        android:text="Click the play button below, then select the best match:"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_height="60sp"
+        android:layout_width="match_parent"
+        android:layout_weight=".1"
+        android:gravity="center">
+    <Button
+        android:id="@+id/playAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Audio"
+        android:onClick="playAudio"
+        android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingEnd="50sp"
+        android:layout_weight=".7"
+        android:paddingStart="50sp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_gravity="left"
+            android:gravity="left">
+
+            <RadioButton
+                android:id="@+id/bait"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:text=" BAIT"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/bart"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:text=" BART"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:layout_marginTop = "24sp"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/bat"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="24sp"
+                android:text=" BAT"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/beet"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="24sp"
+                android:text=" BEET"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/burt"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="24sp"
+                android:text=" BURT"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/bet"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="24sp"
+                android:text=" BET"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:gravity="right">
+
+            <RadioButton
+                android:id="@+id/bit"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:text=" BIT"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/bite"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="24sp"
+                android:text=" BITE"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/boot"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="24sp"
+                android:text=" BOOT"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/bought"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="24sp"
+                android:text="BOUGHT"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:background="@drawable/radio_background"
+                android:textSize="22sp"
+
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/bout"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="24sp"
+                android:text=" BOUT"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"/>
+
+            <RadioButton
+                android:id="@+id/but"
+                android:layout_width="120sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="24sp"
+                android:text=" BUT"
+                android:button="@drawable/radio_inactive"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@drawable/radio_background"
+                android:onClick="recordAnswer"
+                />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="80sp"
+        android:layout_width="match_parent"
+        android:layout_weight=".1"
+        android:gravity="top|center">
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="120sp"
+            android:layout_height="55sp"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:text="Submit"
+            android:onClick="submit"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
