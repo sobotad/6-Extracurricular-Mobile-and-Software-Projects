@@ -18,11 +18,13 @@ import java.io.File;
 
 public class End extends AppCompatActivity {
 
-    //Variables corresponding to dropbox app project
-    final static private String APP_KEY = "26rdwxwrcuhy5r7";
-    final static private String APP_SECRET = "fl5kvhi25oqvqkh";
+    //Information has been removed for the sake of privacy for the lab
+    final static private String APP_KEY = "";
+    final static private String APP_SECRET = "";
     private DropboxAPI<AndroidAuthSession> mDBApi;
-    final static private String ACCESS_TOKEN = "w49p96QBdgsAAAAAAAAn2knODVPo0y262nnn_JUUpH4JglGbyFuDYoz2-hM-5QHy";
+
+    //By hard-coding an access token, files can be placed directly in the dropbox without users having to sign in, etc.
+    final static private String ACCESS_TOKEN = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
