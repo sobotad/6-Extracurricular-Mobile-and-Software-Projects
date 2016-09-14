@@ -1,0 +1,2 @@
+Please note, the projects in this folder are old, and were taken on years ago, before I had formal training in computer science. As such, the code is not formatted well and well documented. 
+I decided to display these projects in order to show that I have experience with different programming languages/software. However, if you want a more updated and realistic look at my coding methods, look at the apps I have created, as those were completed designed, coded, and commented out by me.
